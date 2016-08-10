@@ -11,7 +11,7 @@
 # When you make the second `repeat` test pass, you might break the **first**
 #
 
-require "simon_says"
+require "./simon_says.rb"
 
 describe "Simon says" do
   describe "echo" do
@@ -77,7 +77,7 @@ describe "Simon says" do
 
   describe "titleize" do
     it "capitalizes a word" do
-      expect(titleize("jaws")).to eq("Jaws")
+     expect(titleize("jaws")).to eq("Jaws")
     end
 
     it "capitalizes every word (aka title case)" do
